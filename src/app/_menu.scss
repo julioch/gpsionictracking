@@ -1,0 +1,34 @@
+.ios, .md {
+	page-menu {
+		ion-menu {
+			.header {
+				.toolbar {
+					.toolbar-background {
+						background-color: map-get($colors, primary);
+					}
+					.toolbar-title{
+						color: #ffffff;
+					}
+				}
+			}
+			ion-content {
+				.activepage {
+					position: relative;
+					background-color: map-get($colors, backitem);
+		            &:after {
+						color: map-get($colors, backitem);
+						left: 0;
+		                position: absolute;
+		                top: 4px;
+		                width: 0;
+		            }
+		        }
+				.item {
+					&.activated {
+						background-color: transparent;
+					}
+				}
+			}
+		}
+	}
+}

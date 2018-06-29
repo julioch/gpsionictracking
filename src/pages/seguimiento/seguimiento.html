@@ -1,0 +1,26 @@
+<!--
+  Generated template for the SeguimientoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Mis locales</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item ion-item *ngFor="let item of users">
+      <h2>{{ item.nombre_comercial }}</h2>
+      <p>{{ item.direccion }}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

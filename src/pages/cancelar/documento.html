@@ -1,0 +1,43 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Documento</ion-title>
+    <ion-buttons end>
+      <button ion-button color="royal" (click)="cancelarDoc(item.nrofactura)">
+        Guardar
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Nro Doc</ion-label>
+      <ion-input type="text" readonly value="{{item.nrofactura}}"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Tipo Doc</ion-label>
+      <ion-select readonly>
+        <ion-option value="ny" selected="true">Boleta</ion-option>
+        <ion-option value="sf">Factura</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Tipo Local</ion-label>
+      <ion-select readonly>
+        <ion-option value="l" selected="true">Locales</ion-option>
+        <ion-option value="b">Bailes</ion-option>
+        <ion-option value="e">Espectaculos</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Monto</ion-label>
+      <ion-input type="text" value="{{item.monto}}"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-textarea placeholder="Ingrese un concepto" readonly value="{{item.concepto}}"></ion-textarea>
+    </ion-item>
+  </ion-list>
+</ion-content>

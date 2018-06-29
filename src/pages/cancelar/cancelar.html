@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Cancelaciones</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="users.length > 0">
+    <ion-card *ngFor="let item of users">
+      <ion-card-content>
+        <ion-card-title color="iconSeg">
+          {{item.nombre_comercial}}
+        </ion-card-title>
+        <p>
+          Direccion : {{item.direccion}}
+        </p>
+      </ion-card-content>
+      <ion-list>
+        <button ion-item *ngFor="let factura of item.facturas" (click)="openNavDocumentoPage(factura)">
+          <ion-icon name="card" color="secondary" item-start large></ion-icon>
+          <h2>Doc Nro. {{factura.nrofactura}}</h2>
+          <p>Fecha: {{factura.fecha}}</p>
+        </button>
+      </ion-list>
+    </ion-card>
+  </div>
+  <div class="home-container" *ngIf="users.length == 0">
+    <div class="row row-center">
+      <ion-icon class="ico_empty" name="paper"></ion-icon>
+      <div class="text-empty">
+        <h5>No hay datos a mostrar</h5>
+      </div>
+    </div>
+  </div>
+</ion-content>

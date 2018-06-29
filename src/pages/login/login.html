@@ -1,0 +1,23 @@
+<ion-content>
+  <!-- *class first-wrapper / upper container -->
+  <div class="first-wrapper">
+    <!-- *class logo / logo -->
+    <div class="logo">
+      <img src="assets/imgs/logo.png" alt="gescobpocket">
+    </div>
+  </div>
+  <!-- *class second-wrapper / lower container -->
+  <div class="second-wrapper">
+    <ion-list inset>
+      <ion-item>
+        <ion-icon item-left name="person"></ion-icon>
+        <ion-input type="text" placeholder="Usuario"  [(ngModel)]="user.usuario"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon item-left name="unlock"></ion-icon>
+        <ion-input type="password" placeholder="Password"  [(ngModel)]="user.pass"></ion-input>
+      </ion-item>
+      <button ion-button color="primary" block (click)="login()">Entrar</button>
+    </ion-list>
+  </div>
+</ion-content>

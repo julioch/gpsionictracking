@@ -1,0 +1,76 @@
+.ios, .md {
+    page-login {
+        .first-wrapper {
+            text-align: center;
+            .logo {
+                margin: 40px 0 20px;
+                display: inline-block;
+                img{
+                    width: 80%;
+                }
+            }
+        }
+        .second-wrapper {
+            text-align: center;
+            ion-list {
+                padding: 0 20px;
+                ion-item {
+                    border: 1px solid map-get($colors , primary ) !important;
+                    border-radius: 5px;
+                    min-height: 35px;
+                    height: 35px;
+                    margin-bottom: 20px;
+                    padding-left: 2px;
+                    &:first-child {
+                        margin-bottom: 10px;
+                    }
+                    .item-inner {
+                        border-bottom: 0;
+                        box-shadow: none !important;
+                        margin-left: 0;
+                        .input-wrapper {
+                            ion-input {
+                                .text-input {
+                                    color: map-get($colors, primary);
+                                    font-size: 1.5rem;
+                                    line-height: 35px;
+                                    margin: 0;
+                                }
+                            }
+                            ::-webkit-input-placeholder {
+                                    color: darken(map-get($colors, light), 20%);
+                            }
+                        }
+                    }
+                    ion-icon[item-left] {
+                        color: map-get($colors, primary);
+                        font-size: 2rem;
+                        line-height: 35px;
+                        margin: 0 8px 0 0 !important;
+                        min-height: 35px;
+                        min-width: 35px !important;
+                        padding: 0;
+                    }
+                }
+                button {
+                    box-shadow: none;
+                    height: 4.48rem;
+                }
+            }
+            .sign-up {
+                color: darken(map-get($colors, light ), 30%);
+                display: block;
+                font-weight: 500;
+                margin-top: 20px;
+                div {
+                    display: inline-block;
+                    color: map-get($colors, primary );
+                    font-weight: 500;
+                }
+            }
+            .pass {
+                margin: 40px 0 0;
+            }
+        }
+    }
+}

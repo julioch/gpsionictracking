@@ -1,0 +1,12 @@
+.ios,.md {
+    page-empadronar{
+        ion-content {
+            h3 {
+                color: map-get($colors, danger);
+            }
+            p {
+                color: map-get($colors, dark);
+            }
+        }
+    }
+}

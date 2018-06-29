@@ -1,0 +1,24 @@
+page-cancelar {
+    .ico_empty {
+        font-size:6em;
+        color: #dbdbdb;
+        text-align: center;
+    }
+    .home-container .row-center ion-icon {
+        position:absolute;
+        left: 0;
+        right: 0;
+        margin:0 auto;
+        top:50%;
+        transform:translateY(-50%);
+    }
+    .text-empty {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 60%;
+        color: #615b5b;
+        text-align: center;
+    }
+}
